@@ -12,9 +12,11 @@ def subjectchoose(text_to_speech):
         if Subject=="":
             t='Please enter the subject name.'
             text_to_speech(t)
+        #os.makedirs("C:\\Users\hp\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\{Subject}")
         os.chdir(
             f"C:\\Users\hp\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\{Subject}"
         )
+
         filenames = glob(
             f"C:\\Users\hp\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\{Subject}\\{Subject}*.csv"
         )
@@ -85,6 +87,7 @@ def subjectchoose(text_to_speech):
             t="Please enter the subject name!!!"
             text_to_speech(t)
         else:
+            print ('***********************',sub)
             os.startfile(
             f"C:\\Users\hp\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\{sub}"
             )

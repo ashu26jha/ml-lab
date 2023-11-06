@@ -224,7 +224,7 @@ def subjectChoose(text_to_speech):
             text_to_speech(t)
         else:
             os.startfile(
-                f"C:\\Users\hp\\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\ml.csv"
+                f"C:\\Users\hp\\Desktop\ml project\Attendance-Management-system-using-face-recognition\Attendance\{sub}"
             )
 
     attf = tk.Button(
